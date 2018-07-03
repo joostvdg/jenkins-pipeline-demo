@@ -10,7 +10,9 @@ pipeline {
       }
     }
     stage('say hello') {
-	sayHello('joost')
+	steps {
+		sayHello('joost')
+	}
     }
   }
 }
