@@ -9,5 +9,8 @@ pipeline {
         echo 'hello'
       }
     }
+    stage('say hello') {
+	sayHello('joost')
+    }
   }
 }
